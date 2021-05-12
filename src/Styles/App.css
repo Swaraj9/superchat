@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --black: rgb(18, 18, 18);
+  --white: rgb(240, 240, 240);
+  --primary: rgb(247, 189, 0);
+  --grey: rgb(25, 25, 25);
+  --lightGrey: rgb(34, 34, 34);
+}
+
+.App {
+  background-color: var(--black);
+  color: var(--white);
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+.button-fill {
+  border: 0;
+  color: var(--black);
+  background-color: var(--primary);
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  transition: all 0.25s ease;
+}
+
+.button-fill:hover {
+  opacity: 0.9;
+  padding: 12px;
+}
+
+.button-fill:active {
+  opacity: 0.75;
+}
+
+.button-border {
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  background-color: transparent;
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  transition: all 0.25s ease;
+}
+
+.button-border:hover {
+  background-color: var(--primary);
+  color: var(--black);
+}
